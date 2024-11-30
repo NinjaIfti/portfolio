@@ -90,6 +90,12 @@ body {
   -webkit-tap-highlight-color: #0000;
   margin: 0;
 }
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Optional: space between icons */
+}
+
 
 hr {
   color: inherit;
