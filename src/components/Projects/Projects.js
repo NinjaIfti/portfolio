@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/metro.jpg";
-import emotion from "../../Assets/Projects/emotion.png";
+import emotion from "../../Assets/Projects/mask.png";
 import editor from "../../Assets/Projects/felix.jpg";
 import onecs from "../../Assets/Projects/1cs.jpg";
 import suicide from "../../Assets/Projects/ml.jpg";
@@ -80,8 +80,7 @@ function Projects() {
               imgPath={emotion}
               isBlog={false}
               title="Safety Mask Detection using YOLOV5"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
+              description="A computer vision project that uses YOLO object detection model to identify safety mask from live camera feed. The model is trained on a custom dataset of 1000 images and 1000 images for validation."
               ghLink="https://github.com/NinjaIfti/Face-Mask-Detection-YoloV5"
             />
           </Col>
