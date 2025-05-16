@@ -2,11 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
+import leaf from "../../Assets/Projects/metro.jpg";
 import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import editor from "../../Assets/Projects/felix.jpg";
 import onecs from "../../Assets/Projects/1cs.jpg";
-import suicide from "../../Assets/Projects/suicide.png";
+import suicide from "../../Assets/Projects/ml.jpg";
 import bitsOfCode from "../../Assets/Projects/gh.jpg";
 
 function Projects() {
@@ -28,7 +28,7 @@ function Projects() {
               title="1Contractor A Permitting Software"
               description="1Contractor is a permitting software that helps contractors to manage their permits and inspections. It is a web application that is built with React.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
               ghLink="https://github.com/NinjaIfti/1-Construction"
-              demoLink="https://1csportal.com/"
+              demoLink="hhttp://1cshub.com/"
             />
           </Col>
 
@@ -47,10 +47,10 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Felix Bus"
+              description="Felix Bus is a bus booking system that allows users to book buses for their travel based on PHP, MySQL, and JavaScript. Have features which allows user for realtime messaging, trasaction, and tracking of bus."
+              ghLink="https://github.com/NinjaIfti/FelixBusProject"
+              demoLink="https://seagreen-duck-179448.hostingersite.com/"              
             />
           </Col>
 
@@ -58,10 +58,10 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Dhaka Metro Rail QR Code Ticketing System"
+              description="Dhaka Metro Rail QR Code Ticketing System is a Laravel web application that allows users to book tickets for Dhaka Metro Rail. Have features which allows user for see the schudele, map even see annoucment and news for Dhaka Metro Rail."
+              ghLink="https://github.com/NinjaIfti/Metro-Rail-QR-Code-Ticketing-System"
+              demoLink="https://lavender-raccoon-436283.hostingersite.com/"
             />
           </Col>
 
@@ -69,22 +69,20 @@ function Projects() {
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
+              title="Safety Equipment Detection using Machine Learning"
+              description="A computer vision project that uses YOLO object detection model to identify safety equipment like helmets, vests, and gloves in construction sites. This system helps ensure worker safety by automatically monitoring compliance with safety regulations."
+              ghLink="https://github.com/NinjaIfti/Safery-Equipment-Detection-"
+                        />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={emotion}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
+              title="Safety Mask Detection using YOLOV5"
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              ghLink="https://github.com/NinjaIfti/Face-Mask-Detection-YoloV5"
             />
           </Col>
         </Row>
