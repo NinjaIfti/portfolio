@@ -8,7 +8,10 @@ import editor from "../../Assets/Projects/felix.jpg";
 import onecs from "../../Assets/Projects/1cs.jpg";
 import suicide from "../../Assets/Projects/ml.jpg";
 import bitsOfCode from "../../Assets/Projects/gh.jpg";
-
+import arfan from "../../Assets/Projects/arfan.jpg";
+import zawajAfrica from "../../Assets/Projects/zawajafrica.jpg";
+import print from "../../Assets/Projects/print.png";
+import expressBuy from "../../Assets/Projects/express.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -34,11 +37,11 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={zawajAfrica}
               isBlog={false}
-              title="Graphic Editor"
-              description="Graphic Editor is a web application based on fabric js that allows users to create and edit pictures text, shapes, and images. It is a web application that is built with Alpine.js, Tailwind CSS, and Fabric js. "
-              ghLink="https://github.com/NinjaIfti/Graphic-Editor"
+              title="ZawajAfrica"
+              description="ZawajAfrica is a Matrimonial platform that allows users to find their perfect match based on their interests and preferences. It is a web application that is built with laravel, tailwind css, and mysql. "
+              ghLink="https://zawajafrica.online/login"
               demoLink="https://graphic-editor-git-main-iftikhar-ahmeds-projects.vercel.app/"
             />
           </Col>
@@ -51,6 +54,39 @@ function Projects() {
               description="Felix Bus is a bus booking system that allows users to book buses for their travel based on PHP, MySQL, and JavaScript. Have features which allows user for realtime messaging, trasaction, and tracking of bus."
               ghLink="https://github.com/NinjaIfti/FelixBusProject"
               demoLink="https://seagreen-duck-179448.hostingersite.com/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={arfan}
+              isBlog={false}
+              title="Arfan Express Ltd"
+              description="Arfan Express Ltd is a logistic system that allows users to manage their logistic based on React, Node.js, and JavaScript. Have features which allows user for realtime messaging, trasaction, and tracking of their products."
+              ghLink=""
+              demoLink="https://www.arfanexpressbd.com/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={print}
+              isBlog={false}
+              title="Brand New Print "
+              description="Brand New Print is a printing system that allows users to manage their printing based on laravel , tailwind css, and mysql. Have features which allows user for realtime select the product,print type realtime email delivert and multiple language support payment gateway and trasaction, and tracking of their products."
+              ghLink=""
+              demoLink="https://login.brandnewprint.com/login"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={expressBuy}
+              isBlog={false}
+              title="Express Buy "
+              description="Express Buy is a Cryptocurrency trading platform that allows users to manage their crypto wallet it is built with Laravel, Livewire, Mysql and javascript. Have features which allows user to buy and sell crypto, realtime email delivery, multiple language support payment gateway and trasaction, and withdrawing."
+              ghLink=""
+              demoLink="https://expresbuy.com/"              
             />
           </Col>
 
