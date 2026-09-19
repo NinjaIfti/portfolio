@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fd10eff2.css",
-    "main.js": "/static/js/main.74617850.js",
+    "main.js": "/static/js/main.a3d8c0da.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/undp-summit.png": "/static/media/undp-summit.4af7529648fb5a3def10.png",
@@ -21,19 +21,18 @@
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/me.jpg": "/static/media/me.e2441bb5eae60ffc495e.jpg",
     "static/media/zawajafrica.jpg": "/static/media/zawajafrica.09f9c1e497982399aa95.jpg",
-    "static/media/gh.jpg": "/static/media/gh.ee4bb385901904036d2b.jpg",
     "static/media/ml.jpg": "/static/media/ml.163d549231c9e860bb55.jpg",
     "static/media/wemapay.png": "/static/media/wemapay.154ec56932a56d342ae9.png",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.fd10eff2.css.map": "/static/css/main.fd10eff2.css.map",
-    "main.74617850.js.map": "/static/js/main.74617850.js.map",
+    "main.a3d8c0da.js.map": "/static/js/main.a3d8c0da.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fd10eff2.css",
-    "static/js/main.74617850.js"
+    "static/js/main.a3d8c0da.js"
   ]
 }
