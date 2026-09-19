@@ -10,6 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
+  const [numPages, setNumPages] = useState(0);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -32,8 +33,19 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Document
+            file={pdf}
+            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+            className="d-flex flex-column align-items-center"
+          >
+            {Array.from({ length: numPages }, (_, index) => (
+              <Page
+                key={index + 1}
+                pageNumber={index + 1}
+                scale={width > 786 ? 1.7 : 0.6}
+                className={index > 0 ? "mt-4" : ""}
+              />
+            ))}
           </Document>
         </Row>
 
