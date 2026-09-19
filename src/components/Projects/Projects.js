@@ -12,6 +12,8 @@ import arfan from "../../Assets/Projects/arfan.jpg";
 import zawajAfrica from "../../Assets/Projects/zawajafrica.jpg";
 import print from "../../Assets/Projects/print.png";
 import expressBuy from "../../Assets/Projects/express.png";
+import expresbuyMarket from "../../Assets/Projects/expresbuy.png";
+import lamix from "../../Assets/Projects/lamix.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -87,6 +89,27 @@ function Projects() {
               description="Express Buy is a Cryptocurrency trading platform that allows users to manage their crypto wallet it is built with Laravel, Livewire, Mysql and javascript. Have features which allows user to buy and sell crypto, realtime email delivery, multiple language support payment gateway and trasaction, and withdrawing."
               ghLink=""
               demoLink="https://expresbuy.com/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={expresbuyMarket}
+              isBlog={false}
+              title="ExpresBuy Online Marketplace"
+              description="ExpresBuy is a multi-vendor e-commerce marketplace built for Sierra Leone on CodeIgniter 4 and MySQL, carrying listings across electronics, vehicles, properties, services and jobs. Features native mobile money payments, seller memberships and boosted ads, a referral programme, SMS OTP sign-in, and a companion Flutter buyer and seller app published on the Play Store."
+              ghLink="https://github.com/NinjaIfti/ExpresBuy"
+              demoLink="https://expresbuy.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={lamix}
+              isBlog={false}
+              title="Lamix SMS Agent Admin Panel"
+              description="Lamix SMS is a wholesale SMS management panel built with Laravel and a Bootstrap 5 frontend generated from Python templates. Handles an agent and client account hierarchy, SMS number ranges with bulk allocation, detailed CDR and delivery statistics, and credit notes, secured with session authentication, a server-side captcha and login throttling."
+              ghLink=""
             />
           </Col>
 
