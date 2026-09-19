@@ -7,7 +7,6 @@ import emotion from "../../Assets/Projects/mask.png";
 import editor from "../../Assets/Projects/felix.jpg";
 import onecs from "../../Assets/Projects/1cs.jpg";
 import suicide from "../../Assets/Projects/ml.jpg";
-import bitsOfCode from "../../Assets/Projects/gh.jpg";
 import arfan from "../../Assets/Projects/arfan.jpg";
 import zawajAfrica from "../../Assets/Projects/zawajafrica.jpg";
 import print from "../../Assets/Projects/print.png";
