@@ -14,6 +14,10 @@ import print from "../../Assets/Projects/print.png";
 import expressBuy from "../../Assets/Projects/express.png";
 import expresbuyMarket from "../../Assets/Projects/expresbuy.png";
 import lamix from "../../Assets/Projects/lamix.png";
+import undpSummit from "../../Assets/Projects/undp-summit.png";
+import ninjaWrecks from "../../Assets/Projects/ninjawrecks.png";
+import nomiqa from "../../Assets/Projects/nomiqa.png";
+import wemaPay from "../../Assets/Projects/wemapay.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -110,6 +114,49 @@ function Projects() {
               title="Lamix SMS Agent Admin Panel"
               description="Lamix SMS is a wholesale SMS management panel built with Laravel and a Bootstrap 5 frontend generated from Python templates. Handles an agent and client account hierarchy, SMS number ranges with bulk allocation, detailed CDR and delivery statistics, and credit notes, secured with session authentication, a server-side captcha and login throttling."
               ghLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={undpSummit}
+              isBlog={false}
+              title="Global Conscious Food Systems Summit"
+              description="Ticketing and registration platform for the first Global Conscious Food Systems Summit in Bhutan, hosted by UNDP, the Royal Government of Bhutan and the Conscious Food Systems Alliance for 350 to 500 delegates. Built with Laravel, Inertia, Vue 3 and Tailwind, with tiered participant pricing, sponsored tickets delivered by automated email, a site-wide registration toggle, public registration and ticket status APIs, and PDF and Excel exports."
+              ghLink="https://github.com/NinjaIfti/UNDP-FOOD-SUMMIT"
+              demoLink="https://consciousfoodsummit.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ninjaWrecks}
+              isBlog={false}
+              title="NinjaWrecks"
+              description="NinjaWrecks is an e-commerce store for gaming merchandise built with Laravel, Alpine.js and Tailwind, selling Valorant and CS:GO replica collectibles and RC toys. Features product variants, categories, coupons and special offers, reviews, cart and checkout, giveaway entries awarded automatically on delivered orders, stock notifications, abandoned order recovery, and an admin panel with multi-mode order search and analytics."
+              ghLink="https://github.com/NinjaIfti/NinjaWrekcs"
+              demoLink="https://www.ninjawrecks.me/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nomiqa}
+              isBlog={false}
+              title="Nomiqa DePIN eSIM Network"
+              description="Nomiqa is a DePIN-powered eSIM network that turns mobile connectivity into a crypto-native, user-owned infrastructure layer. Built as a React and TypeScript app with Vite, shadcn/ui and Tailwind, wrapped with Capacitor for Android and iOS and backed by Supabase. Includes an eSIM shop and checkout, an affiliate programme, rewards and token dashboards, biometric authentication and push notifications."
+              ghLink=""
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={wemaPay}
+              isBlog={false}
+              title="WemaPay Digital Wallet"
+              description="WemaPay is a digital wallet and bill payment platform with a Flutter mobile app on the Play Store and App Store alongside its web platform. Supports sending and requesting money, wallet top-ups, QR payments, airtime and utility bill payments through Reloadly, and a full transaction ledger, with personal, business and enterprise account tiers."
+              ghLink=""
+              demoLink="https://wemapay.online/"
             />
           </Col>
 
