@@ -29,3 +29,4 @@ Server/node_modules
 Server/config.js
 # source documents, not for publishing
 *.docx
+/*.pdf
