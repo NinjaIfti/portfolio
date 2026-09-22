@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iftikhar Ahmed</title>
+  <meta name="description" content="Iftikhar Ahmed, Research Assistant at the Big-Matrix R&amp;D Lab. Research on audio deepfake detection and adversarial robustness. Seeking Master's and PhD positions.">
+  <meta property="og:title" content="Iftikhar Ahmed">
+  <meta property="og:description" content="Research Assistant, Big-Matrix R&amp;D Lab. Audio deepfake detection and adversarial robustness.">
+  <meta property="og:image" content="https://research.iftikharahmed.site/photo.jpg">
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1b1b1b;
+      --muted: #5c5f66;
+      --rule: #e4e4e1;
+      --accent: #1c4f8f;
+      --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+      --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121315;
+        --text: #e6e6e3;
+        --muted: #9fa3a9;
+        --rule: #2a2c30;
+        --accent: #8ab4f0;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 18px/1.65 var(--serif);
+    }
+    main { max-width: 48rem; margin: 0 auto; padding: 4.5rem 1.5rem 3rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; text-underline-offset: .15em; }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2.5rem;
+      align-items: center;
+    }
+    h1 {
+      margin: 0 0 .5rem;
+      font-size: 2.5rem; font-weight: 600; line-height: 1.1;
+      letter-spacing: -.015em;
+    }
+    .position { margin: 0; font-size: 1.1rem; }
+    .seeking { margin: .15rem 0 .1rem; font: 600 .95rem/1.5 var(--sans); color: var(--accent); }
+    .institution { margin: 0 0 1.1rem; color: var(--muted); font-size: 1.05rem; }
+    .contact {
+      margin: 0; padding: 0; list-style: none;
+      display: flex; flex-wrap: wrap;
+      font: 500 .88rem/1.9 var(--sans);
+    }
+    .contact li:not(:last-child)::after { content: "/"; margin: 0 .6rem; color: var(--rule); }
+    .portrait {
+      width: 168px; height: 168px;
+      border-radius: 50%; object-fit: cover;
+      border: 1px solid var(--rule);
+    }
+
+    section { margin-top: 3.25rem; }
+    h2 {
+      margin: 0 0 1.25rem;
+      font: 600 1.65rem/1.2 var(--serif);
+      letter-spacing: -.01em;
+      color: var(--text);
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 2.75rem; height: 3px;
+      margin-top: .55rem;
+      border-radius: 2px;
+      background: var(--accent);
+    }
+    p { margin: 0 0 1rem; }
+    .bio p:last-child { margin-bottom: 0; }
+
+    .pub { display: grid; grid-template-columns: 2.6rem 1fr; }
+    .pub + .pub { margin-top: 1.4rem; }
+    .pub-id { font: 500 .85rem/1.9 var(--sans); color: var(--muted); }
+    .pub-title { font-weight: 600; }
+    .pub-venue { font-style: italic; }
+    .pub-links { display: block; margin-top: .45rem; }
+    .pub-links a {
+      display: inline-block;
+      padding: .1rem .6rem;
+      border: 1px solid var(--accent);
+      border-radius: 4px;
+      font: 600 .76rem/1.6 var(--sans);
+      letter-spacing: .04em;
+    }
+    .pub-links a:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
+    .note { display: block; margin-top: .35rem; color: var(--muted); font-size: .95rem; }
+
+    .entry { margin-bottom: 1.75rem; }
+    .entry:last-child { margin-bottom: 0; }
+    .entry h3 { margin: 0; font-size: 1.05rem; font-weight: 600; line-height: 1.45; }
+    .entry .meta { margin: .1rem 0 .45rem; font: .86rem/1.6 var(--sans); color: var(--muted); }
+    .entry p { margin: 0; }
+    figure { margin: 1rem 0 0; }
+    figure img { display: block; width: 100%; height: auto; border-radius: 4px; }
+    figcaption { margin-top: .5rem; font: .82rem/1.55 var(--sans); color: var(--muted); }
+
+    .timeline { margin: 0; padding: 0; list-style: none; }
+    .timeline li {
+      display: grid; grid-template-columns: 1fr auto; gap: 1.5rem;
+      padding: .55rem 0;
+      border-top: 1px solid var(--rule);
+    }
+    .timeline li:last-child { border-bottom: 1px solid var(--rule); }
+    .timeline .org { color: var(--muted); }
+    .timeline .dates { font: .86rem/1.9 var(--sans); color: var(--muted); white-space: nowrap; }
+
+    footer {
+      margin-top: 4rem;
+      font: .82rem/1.6 var(--sans);
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 17px; }
+      main { padding-top: 2.5rem; }
+      header { grid-template-columns: 1fr; gap: 1.5rem; }
+      .portrait { order: -1; width: 116px; height: 116px; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.4rem; }
+      .pub { grid-template-columns: 1fr; }
+      .pub-id { line-height: 1.4; }
+      .timeline li { grid-template-columns: 1fr; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <header>
+    <div>
+      <h1>Iftikhar Ahmed</h1>
+      <p class="position">Research Assistant, <a href="https://lab.big-matrix.com/team/member/63">Big-Matrix R&amp;D Lab</a></p>
+      <p class="seeking">Currently seeking Master's and PhD positions</p>
+      <p class="institution">North South University, Dhaka, Bangladesh</p>
+      <ul class="contact">
+        <li><a href="mailto:ifti3061@gmail.com">ifti3061@gmail.com</a></li>
+        <li><a href="https://lab.big-matrix.com/team/member/63">Lab Profile</a></li>
+        <li><a href="https://github.com/NinjaIfti">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/iftikhar-ahmed-223329339/">LinkedIn</a></li>
+      </ul>
+    </div>
+    <img class="portrait" src="photo.jpg" alt="Iftikhar Ahmed">
+  </header>
+
+  <section class="bio">
+    <h2>About</h2>
+    <p>I am a Research Assistant at the <a href="https://lab.big-matrix.com/team/member/63">Big-Matrix R&amp;D Lab</a>, a research group focused on AI for healthcare, and a Computer Science and Engineering graduate of North South University.</p>
+    <p>My research concerns the reliability of audio deepfake detection. I study how detectors can be made robust to adversarial perturbations, and why they fail to generalise across languages and unseen speech generators. I also work on biomedical image analysis, and am broadly interested in adversarial training and cross-lingual speech processing.</p>
+  </section>
+
+  <section>
+    <h2>Publications</h2>
+    <div class="pub">
+      <span class="pub-id">[C1]</span>
+      <div>
+        <strong>Iftikhar Ahmed</strong>, Mueid Islam Arian, Nusrat Jahan Lisa.
+        <span class="pub-title">&ldquo;Mel-Spectrogram Representations for CNN Based Adversarial Defense for Audio Deepfake Detection.&rdquo;</span>
+        In <span class="pub-venue">Proceedings of the 11th International Conference on Machine Learning Technologies (ICMLT)</span>, Germany, 2026.
+        <span class="pub-links"><a href="papers/ahmed-icmlt2026.pdf">PDF</a></span>
+        <span class="note">Proceedings to appear in IEEE Xplore. &copy; 2026 IEEE.</span>
+      </div>
+    </div>
+    <div class="pub">
+      <span class="pub-id">[S1]</span>
+      <div>
+        <strong>Iftikhar Ahmed</strong>, M. N. Mithila, A. Dhrubo, M. A. Qayum, M. Khan.
+        <span class="pub-title">&ldquo;DASF-Net: Dual-Adversarial Spectral Fusion for Cross-Lingual and Adversarially Robust Audio Deepfake Detection.&rdquo;</span>
+        Under review, 2026.
+        <span class="pub-links"><a href="papers/ahmed-dasfnet-2026.pdf">PDF</a></span>
+        <span class="note">A dual-branch LFCC and log-Mel architecture with cross-attention fusion, trained with a dual-adversarial objective: a gradient-reversed language discriminator for language invariance, and FGSM/PGD training for robustness to perturbations. Designed for transfer from English (WaveFake) to Bengali (BanglaFake).</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Research</h2>
+
+    <div class="entry">
+      <h3>Multimodal AI for Treatment Response and Outcome Prediction in Lung Cancer</h3>
+      <p class="meta">Ongoing &middot; Big-Matrix R&amp;D Lab &middot; PI: Prof. Mohammad Monir Uddin</p>
+      <p>A proposed 24-month project with a partner cancer hospital to build and clinically validate a multimodal AI framework for lung cancer. It will combine CT and PET-CT imaging, histopathology, molecular markers (EGFR, ALK, ROS1, KRAS and PD-L1), laboratory results and treatment history to predict treatment response, toxicity, recurrence and survival. The plan compares early, intermediate, late and attention-based fusion, explains predictions to clinicians with SHAP, LIME and Grad-CAM, and validates the models on data from independent hospitals.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Cross-Lingual Audio Deepfake Detection: English and Bengali</h3>
+      <p class="meta">Ongoing &middot; Model design under review [S1]</p>
+      <p>Existing cross-lingual studies change the language and the speech generator at the same time, so they cannot say which one causes a detector to fail. This project separates the two effects using English and Bengali speech, and will be released with a fully reproducible codebase.</p>
+    </div>
+
+    <div class="entry">
+      <h3><a href="https://github.com/NinjaIfti/Bio-Segmentation">Polyp Segmentation in Colonoscopy Images</a></h3>
+      <p class="meta">Biomedical image segmentation &middot; <a href="https://github.com/NinjaIfti/Bio-Segmentation">Code</a></p>
+      <p>An end-to-end segmentation pipeline on Kvasir-SEG, a set of 1,000 colonoscopy frames with pixel-level polyp masks. A U-Net with an ImageNet-pretrained ResNet34 encoder, trained with a combined BCE and Dice loss, reaches a mean Dice of 0.910 and a mean IoU of 0.855 on a held-out test set evaluated at original resolution. The analysis also examines where the model fails, chiefly on pedunculated and flat polyps.</p>
+      <figure>
+        <img src="polyp-segmentation.jpg" alt="Colonoscopy frame, its ground-truth polyp mask, and the model's predicted outline overlaid on the frame" loading="lazy">
+        <figcaption>Left to right: colonoscopy frame, ground-truth mask, and prediction (red) against ground truth (green). This is one of the highest-scoring test cases; the mean test Dice is 0.910. Data: Kvasir-SEG (Jha et al., MMM 2020).</figcaption>
+      </figure>
+    </div>
+
+    <div class="entry">
+      <h3>Adversarial Defense for Audio Deepfake Detection</h3>
+      <p class="meta">Published at ICMLT 2026 [C1]</p>
+      <p>A controlled comparison of LFCC and Mel-spectrogram features for CNN-based detection, using an ImageNet-pretrained Xception on WaveFake with leave-one-out cross-validation across seven neural vocoders. Mel-spectrograms reach an equal error rate of 0.034 against 0.053 for LFCC, a 36% improvement that also outperforms GMM baselines and RawNet2. Adaptive adversarial training reduces EER under FGSM attack from 0.70 to 0.107, and under PGD attack from 0.90 to 0.154.</p>
+    </div>
+
+    <div class="entry">
+      <h3>Emotion Recognition from Hand-Sign Gestures</h3>
+      <p class="meta">Computer vision</p>
+      <p>A computer vision and machine learning system that identifies a user's emotion from hand-sign gestures.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Undergraduate Thesis</h2>
+    <div class="entry">
+      <h3>LectureAssist: An Agentic Multimodal AI Assistant that Turns Lectures into Adaptive Study Material</h3>
+      <p class="meta">North South University, 2026 &middot; Supervisor: Dr. Md Adnan Arefeen &middot; With Salman Shafi and Jarinah Tasnim</p>
+      <p>An end-to-end system that converts lecture videos and academic documents into assessment material using only locally hosted models. Scene-adaptive OCR and Whisper transcription feed a multi-agent pipeline that plans, generates, validates and refines five question types, served by Gemma 3 on a single consumer GPU. Agentic and one-shot generation are compared using an LLM-as-judge evaluation.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li><span>Research Assistant <span class="org">&middot; Big-Matrix R&amp;D Lab</span></span><span class="dates">Present</span></li>
+      <li><span>Associate Software Developer <span class="org">&middot; 1Contractor Solutions, Florida, USA</span></span><span class="dates">May 2024 &ndash; Nov 2025</span></li>
+      <li><span>Freelance Software Engineer <span class="org">&middot; including the registration platform for the UNDP Global Conscious Food Systems Summit</span></span><span class="dates">2024 &ndash; Present</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li><span>B.Sc. in Computer Science and Engineering <span class="org">&middot; North South University</span></span><span class="dates">2021 &ndash; 2026</span></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2026 Iftikhar Ahmed &middot; Software engineering portfolio: <a href="https://iftikharahmed.site/">iftikharahmed.site</a>
+  </footer>
+
+</main>
+</body>
+</html>
