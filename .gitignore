@@ -30,3 +30,6 @@ Server/config.js
 # source documents, not for publishing
 *.docx
 /*.pdf
+
+# browser automation scratch output
+.playwright-mcp/

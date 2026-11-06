@@ -17,6 +17,10 @@ import undpSummit from "../../Assets/Projects/undp-summit.png";
 import ninjaWrecks from "../../Assets/Projects/ninjawrecks.png";
 import nomiqa from "../../Assets/Projects/nomiqa.png";
 import wemaPay from "../../Assets/Projects/wemapay.png";
+import poraghor from "../../Assets/Projects/poraghor.png";
+import accountz from "../../Assets/Projects/accountz.png";
+import nannimo from "../../Assets/Projects/nannimo.png";
+import camelCrossing from "../../Assets/Projects/camelcrossing.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -29,6 +33,45 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={poraghor}
+              isBlog={false}
+              title="Poraghor AI Learning Platform"
+              description="Poraghor is a Bangla-first, AI-native learning platform for SSC Science students, where I am a founding member and CTO. Students type or photograph a question and get a step-by-step Bangla answer grounded in the NCTB textbook, citing the chapter and page. A teacher-verified question bank serves verified answers at no AI cost. Built with Laravel, Inertia, Vue 3 and Filament, with a Flutter mobile app and Firebase."
+              demoLink="https://poraghor.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={accountz}
+              isBlog={false}
+              title="AccountZ Digital Marketplace"
+              description="AccountZ is a digital accounts marketplace built with Laravel and MySQL. Buyers top up a wallet and purchase from categorised products, resellers integrate through personal API keys, and supplier-backed products are bought live from the provider's API and delivered instantly at checkout, with an admin panel for products, orders, deposits and notices."
+              demoLink="https://accountz.net/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={nannimo}
+              isBlog={false}
+              title="Nannimo Companionship App"
+              description="Nannimo finds someone who will just be there with you: ask for company to sit, walk, wait or eat, and someone nearby taps to join. A web app wrapped with Capacitor for Android and iOS and backed by Supabase with row level security, with instant matching, a shared meetup note, and private chat that keeps phone numbers hidden."
+              demoLink="https://www.nannimo.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={camelCrossing}
+              isBlog={false}
+              title="Camel Crossing Mobile Game"
+              description="Camel Crossing is a 3D three.js arcade game packaged as an Android and iOS app. A Flutter wrapper runs the HTML5 game fully offline in a WebView from an in-app server, with a build script that bundles its assets without touching the original file, native vibration, and AdMob rewarded video wired into the game's ad hook."
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={onecs}
