@@ -18,7 +18,10 @@
       --text: #1a1a1a;
       --muted: #666666;
       --rule: #dddddd;
-      --link: #1a1a1a;
+      --link: #1f4e8c;
+      --accent: #1f4e8c;
+      --panel: #f3f6fb;
+      --mark: #fff0a8;
       --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
       --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
@@ -28,7 +31,10 @@
         --text: #e4e4e4;
         --muted: #9a9a9a;
         --rule: #333333;
-        --link: #e4e4e4;
+        --link: #93b6ea;
+        --accent: #93b6ea;
+        --panel: #1a2130;
+        --mark: #5a4a12;
       }
     }
 
@@ -79,9 +85,28 @@
     section { margin-top: 2.5rem; }
     h2 {
       margin: 0 0 1rem;
+      padding-bottom: .35rem;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
       font-size: 1.25rem; font-weight: 600;
       letter-spacing: .01em;
     }
+    .seeking { color: var(--accent); }
+    mark { background: var(--mark); color: inherit; padding: 0 .15em; border-radius: 2px; }
+    .pub.featured {
+      margin: 0 0 1.4rem;
+      padding: 1.1rem 1.2rem 1.15rem;
+      background: var(--panel);
+      border-left: 4px solid var(--accent);
+    }
+    .tag {
+      display: inline-block;
+      margin-bottom: .35rem;
+      font-size: .78rem; font-weight: 600;
+      letter-spacing: .08em; text-transform: uppercase;
+      color: var(--accent);
+    }
+    .pub.featured .pub-note { color: var(--text); }
     h3 { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.45; }
     p { margin: 0 0 .9rem; }
     .muted { color: var(--muted); }
@@ -97,6 +122,7 @@
     summary {
       display: inline;
       cursor: pointer;
+      color: var(--link);
       text-decoration: underline;
       text-decoration-color: var(--muted);
       text-underline-offset: .18em;
@@ -115,6 +141,7 @@
     .list li:last-child { border-bottom: 1px solid var(--rule); }
     .row { display: flex; justify-content: space-between; gap: 1.5rem; }
     .row .right { flex: none; color: var(--muted); font-style: italic; font-size: .93rem; }
+    .status .right { color: var(--accent); font-style: normal; font-weight: 600; font-size: .85rem; }
     .list .muted { font-size: .93rem; }
 
     .entry + .entry { margin-top: 1.5rem; }
@@ -149,7 +176,7 @@
       <h1>Iftikhar Ahmed</h1>
       <p class="lead">Research Assistant, <a href="https://lab.big-matrix.com/team/member/63">Big-Matrix R&amp;D Lab</a></p>
       <p class="lead"><span>North South University, Dhaka, Bangladesh</span></p>
-      <p class="lead"><em>Seeking Master's and PhD positions.</em></p>
+      <p class="lead seeking"><em>Seeking Master's and PhD positions.</em></p>
       <p class="links">
         <a href="Iftikhar_Ahmed_Research_CV.pdf">CV</a><a href="mailto:ifti3061@gmail.com">Email</a><a href="https://scholar.google.com/citations?user=Y6oHZxgAAAAJ&amp;hl=en">Google Scholar</a><a href="https://ieeexplore.ieee.org/document/11689539">IEEE Xplore</a><a href="https://lab.big-matrix.com/team/member/63">Lab Profile</a><a href="https://github.com/NinjaIfti">GitHub</a><a href="https://www.linkedin.com/in/iftikhar-ahmed-223329339/">LinkedIn</a>
       </p>
@@ -165,9 +192,10 @@
 
   <section>
     <h2>Publications</h2>
-    <div class="pub">
+    <div class="pub featured">
       <span class="pub-id">[C1]</span>
       <div>
+        <span class="tag">Published &middot; IEEE &middot; ICMLT 2026</span><br>
         <strong>Iftikhar Ahmed</strong>, Mueid Islam Arian, Nusrat Jahan Lisa.
         <span class="pub-title">Mel-Spectrogram Representations for CNN Based Adversarial Defense for Audio Deepfake Detection.</span>
         In <em>Proceedings of the 11th International Conference on Machine Learning Technologies (ICMLT)</em>, IEEE, 2026.
@@ -188,7 +216,7 @@
 }</pre>
           </details>
         </span>
-        <span class="pub-note">Mel-spectrogram features reduce EER from 0.053 (LFCC) to 0.034 on WaveFake; adaptive adversarial training reduces EER under FGSM from 0.70 to 0.107 and under PGD from 0.90 to 0.154.</span>
+        <span class="pub-note">Mel-spectrogram features reduce EER from 0.053 (LFCC) to <mark>0.034</mark> on WaveFake, a <mark>36% improvement</mark>; adaptive adversarial training reduces EER under FGSM from 0.70 to <mark>0.107</mark> and under PGD from 0.90 to <mark>0.154</mark>.</span>
       </div>
     </div>
     <div class="pub">
@@ -204,7 +232,7 @@
 
   <section>
     <h2>Ongoing Research</h2>
-    <ul class="list">
+    <ul class="list status">
       <li>
         <div class="row"><h3>Cross-Lingual Audio Deepfake Detection: English and Bengali</h3><span class="right">In preparation</span></div>
         <span class="muted">First author</span>
@@ -237,7 +265,7 @@
     <div class="entry">
       <h3><a href="https://github.com/NinjaIfti/Bio-Segmentation">Polyp Segmentation in Colonoscopy Images</a></h3>
       <p class="meta">Biomedical image segmentation &middot; <a href="https://github.com/NinjaIfti/Bio-Segmentation">Code</a></p>
-      <p>A U-Net with an ImageNet-pretrained ResNet34 encoder on Kvasir-SEG, trained with a combined BCE and Dice loss, reaches a mean Dice of 0.910 and a mean IoU of 0.855 on a held-out test set evaluated at original resolution, with a failure analysis on pedunculated and flat polyps.</p>
+      <p>A U-Net with an ImageNet-pretrained ResNet34 encoder on Kvasir-SEG, trained with a combined BCE and Dice loss, reaches a mean Dice of <mark>0.910</mark> and a mean IoU of <mark>0.855</mark> on a held-out test set evaluated at original resolution, with a failure analysis on pedunculated and flat polyps.</p>
       <figure>
         <img src="polyp-segmentation.jpg" alt="Colonoscopy frame, its ground-truth polyp mask, and the model's predicted outline overlaid on the frame" loading="lazy">
         <figcaption>Left to right: colonoscopy frame, ground-truth mask, and prediction (red) against ground truth (green). One of the highest-scoring test cases; the mean test Dice is 0.910. Data: Kvasir-SEG (Jha et al., MMM 2020).</figcaption>
