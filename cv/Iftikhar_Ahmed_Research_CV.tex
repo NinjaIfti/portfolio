@@ -1,0 +1,177 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.75in,top=0.65in,bottom=0.7in]{geometry}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{needspace}
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\definecolor{accent}{HTML}{1A1A1A}
+\definecolor{muted}{HTML}{5A5A5A}
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent,
+  pdftitle={Iftikhar Ahmed - Research CV}, pdfauthor={Iftikhar Ahmed}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\footnotesize\color{muted}Iftikhar Ahmed \quad \thepage}
+
+\setlength{\parindent}{0pt}
+\raggedright
+\urlstyle{same}
+
+\titleformat{\section}{\color{accent}\large\bfseries\scshape}{}{0em}{}[{\color{accent}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{11pt}{5pt}
+
+% ---------- Commands ----------
+% \entry{left bold}{right}{left italic}{right italic}
+\newcommand{\entry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & {\small\color{muted}#4} \\
+  \end{tabularx}\par\vspace{1pt}}
+
+% \project{title}{status}{meta}{description}
+\newcommand{\project}[4]{%
+  \needspace{5\baselineskip}%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & {\footnotesize\color{accent}\textsc{#2}} \\
+  \end{tabularx}\par
+  {\small\color{muted}#3}\par\vspace{1pt}
+  {\small #4}\par\vspace{6pt}}
+
+\newenvironment{tight}{\begin{itemize}[leftmargin=1.1em, itemsep=1pt, topsep=2pt, label={\color{accent}\tiny$\blacksquare$}]\small}{\end{itemize}}
+
+\newcommand{\pubtag}[1]{\textbf{\color{accent}[#1]}}
+
+% =====================================================================
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\fontsize{24}{28}\selectfont\bfseries Iftikhar Ahmed}\par\vspace{4pt}
+  {\large Research Assistant, Big-Matrix R\&D Lab}\par\vspace{1pt}
+  {\itshape Seeking Master's and PhD positions}\par\vspace{5pt}
+  \small
+  \faEnvelope\ \href{mailto:ifti3061@gmail.com}{ifti3061@gmail.com} \quad
+  \faPhone*\ +880 1533 133309 \quad
+  \faMapMarker*\ Dhaka, Bangladesh \\[2pt]
+  \faGraduationCap\ \href{https://scholar.google.com/citations?user=Y6oHZxgAAAAJ&hl=en}{Google Scholar} \quad
+  \faGlobe\ \href{https://research.iftikharahmed.site/}{research.iftikharahmed.site} \quad
+  \faGithub\ \href{https://github.com/NinjaIfti}{NinjaIfti} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/iftikhar-ahmed-223329339/}{iftikhar-ahmed}
+\end{center}
+
+% ---------- Research interests ----------
+\section{Research Interests}
+\small
+Trustworthy machine learning: models that stay reliable under adversarial attack, distribution shift and
+limited measurement. I work on three threads:
+\textbf{robust and cross-lingual audio deepfake detection};
+\textbf{AI for radiotherapy and oncology} (target delineation, medical image segmentation, multimodal outcome prediction);
+and \textbf{verifiable quantum machine learning}.
+\normalsize
+
+% ---------- Publications ----------
+\section{Publications}
+\small
+\pubtag{C1}\; \textbf{Iftikhar Ahmed}, Mueid Islam Arian, Nusrat Jahan Lisa.
+``Mel-Spectrogram Representations for CNN Based Adversarial Defense for Audio Deepfake Detection.''
+In \textit{Proceedings of the 11th International Conference on Machine Learning Technologies (ICMLT 2026)}, Germany. IEEE, 2026.\\[2pt]
+\hspace*{2.1em}\href{https://ieeexplore.ieee.org/document/11689539}{\faExternalLink*\ IEEE Xplore} \quad
+\href{https://doi.org/10.1109/ICMLT69916.2026.11689539}{DOI: 10.1109/ICMLT69916.2026.11689539}\\[2pt]
+\hspace*{2.1em}\begin{minipage}[t]{\dimexpr\linewidth-2.1em}\color{muted}
+Mel-spectrograms beat LFCC for CNN detection on WaveFake (EER 0.034 vs 0.053, a 36\% improvement) across
+leave-one-vocoder-out validation on seven neural vocoders. Adaptive adversarial training lowers EER under FGSM from
+0.70 to 0.107, and under PGD from 0.90 to 0.154.
+\end{minipage}
+
+\vspace{6pt}
+\pubtag{S1}\; \textbf{Iftikhar Ahmed}, M.\,N. Mithila, A. Dhrubo, M.\,A. Qayum, M. Khan.
+``DASF-Net: Dual-Adversarial Spectral Fusion for Cross-Lingual and Adversarially Robust Audio Deepfake Detection.''
+\textit{Under review}, 2026.
+\href{https://research.iftikharahmed.site/papers/ahmed-dasfnet-2026.pdf}{\faFilePdf\ Preprint}
+\normalsize
+
+% ---------- Ongoing research ----------
+\section{Ongoing Research}
+
+\small
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+  \textbf{Cross-Lingual Audio Deepfake Detection: English and Bengali} & {\footnotesize\color{accent}\textsc{In preparation}} \\
+  \textcolor{muted}{First author \,\textperiodcentered\, Speech security} & \\[5pt]
+  \textbf{Clinical Target Volume Delineation for Radiotherapy} & {\footnotesize\color{accent}\textsc{Ongoing}} \\
+  \textcolor{muted}{Big-Matrix R\&D Lab \,\textperiodcentered\, Supervisor: Prof. Mohammad Monir Uddin} & \\[5pt]
+  \textbf{Multimodal AI for Treatment Response and Outcome Prediction in Lung Cancer} & {\footnotesize\color{accent}\textsc{Proposed}} \\
+  \textcolor{muted}{Big-Matrix R\&D Lab \,\textperiodcentered\, PI: Prof. Mohammad Monir Uddin \,\textperiodcentered\, With a partner cancer hospital} & \\[5pt]
+  \textbf{Foundation-Model Segmentation for Breast Radiotherapy CT} & {\footnotesize\color{accent}\textsc{Ongoing}} \\
+  \textcolor{muted}{Medical image segmentation} & \\[5pt]
+  \textbf{Region Selection in Whole-Slide Pathology Images} & {\footnotesize\color{accent}\textsc{Ongoing}} \\
+  \textcolor{muted}{Computational pathology \,\textperiodcentered\, Quantum optimisation} & \\[5pt]
+  \textbf{ZK-QGuard: Auditable Inference for Private Quantum Cloud Services} & {\footnotesize\color{accent}\textsc{Team lead}} \\
+  \textcolor{muted}{Leading a five-person team \,\textperiodcentered\, Quantum ML \,\textperiodcentered\, Zero-knowledge proofs} & \\
+\end{tabularx}
+\normalsize
+
+% ---------- Thesis ----------
+\section{Undergraduate Thesis}
+\project{LectureAssist: An Agentic Multimodal AI Assistant that Turns Lectures into Adaptive Study Material}{2026}
+{North South University \,\textperiodcentered\, Supervisor: Dr. Md Adnan Arefeen \,\textperiodcentered\, With Salman Shafi and Jarinah Tasnim}
+{Scene-adaptive OCR and Whisper transcription feed a multi-agent pipeline that plans, generates, validates and
+refines five question types, served by Gemma~3 on a single consumer GPU, all locally hosted. Agentic and one-shot
+generation are compared with an LLM-as-judge evaluation.}
+
+% ---------- Completed projects ----------
+\section{Completed Research Projects}
+\project{Polyp Segmentation in Colonoscopy Images}{\href{https://github.com/NinjaIfti/Bio-Segmentation}{Code}}
+{Biomedical image segmentation}
+{U-Net with an ImageNet-pretrained ResNet34 encoder on Kvasir-SEG, trained with BCE + Dice loss. Mean test Dice
+0.910 and IoU 0.855 at original resolution, with a failure analysis on pedunculated and flat polyps.}
+
+\project{Emotion Recognition from Hand-Sign Gestures}{}
+{Computer vision}
+{A computer vision system that identifies a user's emotion from hand-sign gestures.}
+
+\project{Safety Equipment Detection}{\href{https://github.com/NinjaIfti/Safery-Equipment-Detection-}{Code}}
+{Object detection}
+{A YOLOv5 object detector for safety equipment.}
+
+% ---------- Education ----------
+\section{Education}
+\entry{North South University}{Dhaka, Bangladesh}
+{B.Sc. in Computer Science and Engineering \,\textperiodcentered\, CGPA 3.07/4.00}{2021 -- 2026}
+
+% ---------- Experience ----------
+\section{Research Experience}
+\entry{Research Assistant}{Big-Matrix R\&D Lab}
+{AI for healthcare: radiotherapy target delineation, oncology outcome prediction}{Present}
+
+% ---------- Skills ----------
+\section{Technical Skills}
+\begin{tight}
+  \item[] \textbf{ML \& research:} PyTorch, scikit-learn, NumPy, Hugging Face, nnU-Net, TotalSegmentator, DINOv3, Whisper, adversarial training (FGSM, PGD), multiple-instance learning
+  \item[] \textbf{Quantum:} Qiskit, QUBO formulation, simulated annealing
+  \item[] \textbf{Languages \& tools:} Python, \LaTeX, Git, Kaggle and Colab GPU workflows
+\end{tight}
+
+% ---------- References ----------
+\section{References}
+\small
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \textbf{Dr. Nusrat Jahan Lisa} & \textbf{Ahasan Habib Nirjon} \\
+  Assistant Professor, Dept. of ECE & Data Architect Specialist \\
+  North South University & Banglalink Digital Communications Ltd. \\
+  \href{mailto:nusrat.lisa@northsouth.edu}{nusrat.lisa@northsouth.edu} & \href{mailto:ahasan.nirjon@banglalink.net}{ahasan.nirjon@banglalink.net} \\
+\end{tabularx}
+
+\end{document}
